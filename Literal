@@ -1,0 +1,44 @@
+/*
+작성자 : 김준환
+작성목적 : literal 연습
+작성일지 : 2020.07.17
+작성환경 : Windows 10, OpenJDK-14.0.2, EditPlus 5.3
+*/
+
+/*
+Literal
+1. 정수형 Literal : +,-,기호, 24(10진수), 24L, 0234(8진수), 0xABCD(16진수), 0b0111001(2진수)
+앞에0을붙이면 8진수,0x면 16진수, 0b면 2진수 표시. L이 붙으면 4바이트가 아닌 8바이트가 할당된다.
+2. 실수형 Literal : +,-,기호, 3.14(실수데이터), 3.14d(이중정밀도), 3.14f(단일정밀도), 3.14e-2(지수형 데이터), 
+3. 문자형 Literal : 'A'(문자데이터), '\n'(escape sequende, 특수문자)
+4. 문자열형 Literal : "강남구 역삼동 한독빌딩"
+5. Boolean형 Literal : true, false
+*/
+
+public class LiteralDemo {
+	public static void main(String[] args) {
+		// 출력형식(출력 format)
+		// System.out.printf("출력형식" , 출력대상);
+/*		System.out.printf("%d\n",-24);
+		System.out.printf("%o\n",-24);
+		System.out.printf("%x\n",-24);
+		System.out.println(Integer.toBinaryString(-24));
+		System.out.println("--------------------------------");
+		System.out.printf("%d\n",-0224);
+		System.out.printf("%o\n",-0224);
+		System.out.printf("%x\n",-0224);
+		System.out.println(Integer.toBinaryString(-0244));
+		System.out.println("--------------------------------");
+		System.out.printf("%d\n",-0xcafe);
+		System.out.printf("%o\n",-0xcafe);
+		System.out.printf("%x\n",-0xcafe);
+		System.out.println(Integer.toBinaryString(-0xcafe));
+		System.out.printf("%d\n",0b0001111);
+		System.out.printf("%o\n",0b0001111);
+		System.out.printf("%x\n",0b0001111);
+		System.out.printf(Integer.toBinaryString(0b0001111));
+*/
+		System.out.println(Integer.toBinaryString(-24));
+		System.out.println(Long.toBinaryString(-24L));
+	}
+}
