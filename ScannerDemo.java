@@ -1,39 +1,40 @@
 /*
-ÀÛ¼ºÀÚ : ±èÁØÈ¯
-ÀÛ¼º¸ñÀû : Scanner
-ÀÛ¼ºÀÏÁö : 20/07/2020
-ÀÛ¼ºÈ¯°æ : Windows 10, OpenJDK-14.0.2, EditPlus 5.3
+ì‘ì„±ì : ê¹€ì¤€í™˜
+ì‘ì„±ëª©ì  : Scanner
+ì‘ì„±ì¼ì§€ : 20/07/2020
+ì‘ì„±í™˜ê²½ : Windows 10, OpenJDK-14.0.2, EditPlus 5.3
 */
 
 import java.util.Scanner;
 
 public class ScannerDemo {
 	public static void main(String[] args) {
-/*		System.out.print("±ÍÇÏÀÇ ³ªÀÌ´Â ? ");
-		Scanner scan = new Scanner(System.in); // 1´Ü°è
+/*		System.out.print("ê·€í•˜ì˜ ë‚˜ì´ëŠ” ? ");
+		Scanner scan = new Scanner(System.in); // 1ë‹¨ê³„
 		int age;
-		age = scan.nextInt(); // ÀÔ·Â ¹öÆÛ¿¡¼­ ÇÑ °³ÀÇ Á¤¼ö¸¦ ÀĞ¾îµéÀÌ´Â ÇÔ¼ö
-		System.out.println("±ÍÇÏÀÇ ³ªÀÌ´Â "+age+"»ìÀÌ±º¿ä.");
-		// System.out.printf("±ÍÇÏÀÇ ³ªÀÌ´Â %d»ìÀÌ±º¿ä.\n", age);
+		age = scan.nextInt(); // ì…ë ¥ ë²„í¼ì—ì„œ í•œ ê°œì˜ ì •ìˆ˜ë¥¼ ì½ì–´ë“¤ì´ëŠ” í•¨ìˆ˜
+		System.out.println("ê·€í•˜ì˜ ë‚˜ì´ëŠ” "+age+"ì‚´ì´êµ°ìš”.");
+		// System.out.printf("ê·€í•˜ì˜ ë‚˜ì´ëŠ” %dì‚´ì´êµ°ìš”.\n", age);
 
-		double height; //1. °ª º¯¼ö ¼±¾ğ
+		double height; //1. ê°’ ë³€ìˆ˜ ì„ ì–¸
 		double weight;
 		
-		Scanner scan; //1. ÁÖ¼Ò º¯¼ö ¼±¾ğ
-		scan = new Scanner(System.in); // ÁÖ¼ÒÇÒ´ç
+		Scanner scan; //1. ì£¼ì†Œ ë³€ìˆ˜ ì„ ì–¸
+		scan = new Scanner(System.in); // ì£¼ì†Œí• ë‹¹
 		
-		System.out.print("Å° : ");
-		height = scan.nextDouble(); // °ª ÇÒ´ç
-		System.out.print("¸ö¹«°Ô : ");
-		weight = scan.nextDouble(); // °ª ÇÒ´ç
-		System.out.printf("Å° = %.1fcm\t¸ö¹«°Ô = %.1fkg\n ",height,weight);		
+		System.out.print("í‚¤ : ");
+		height = scan.nextDouble(); // ê°’ í• ë‹¹
+		System.out.print("ëª¸ë¬´ê²Œ : ");
+		weight = scan.nextDouble(); // ê°’ í• ë‹¹
+		System.out.printf("í‚¤ = %.1fcm\tëª¸ë¬´ê²Œ = %.1fkg\n ",height,weight);		
 */
-		String name; // ÁÖ¼Ò º¯¼ö ¼±¾ğ
-		Scanner scan;// ÁÖ¼Ò º¯¼ö ¼±¾ğ
+		String name; // ì£¼ì†Œ ë³€ìˆ˜ ì„ ì–¸
+		Scanner scan;// ì£¼ì†Œ ë³€ìˆ˜ ì„ ì–¸
 
 		scan = new Scanner(System.in);
-		System.out.print("¼º¸í : ");
-		name = scan.next(); // ÁÖ¼Ò º¯¼ö ÇÒ´ç
-		System.out.println("±ÍÇÏÀÇ ÀÌ¸§Àº"+name+"ÀÌ±º¿ä.");
+		System.out.print("ì„±ëª… : ");
+		name = scan.next(); // ì£¼ì†Œ ë³€ìˆ˜ í• ë‹¹
+		// name = scan.nextLine(); // ì‚¬ìš©ì‹œ ê³µë°±ë„ ë°›ì•„ë“¤ì—¬ì¤€ë‹¤.
+		System.out.println("ê·€í•˜ì˜ ì´ë¦„ì€"+name+"ì´êµ°ìš”.");
 	}
 }
