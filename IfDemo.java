@@ -1,8 +1,8 @@
 /*
-ÀÛ¼ºÀÚ : ±èÁØÈ¯
-ÀÛ¼º¸ñÀû : Á¶°Ç¹®
-ÀÛ¼ºÀÏÁö : 23/07/2020
-ÀÛ¼ºÈ¯°æ : Windows 10, OpenJDK-14.0.2, EditPlus 5.3
+ì‘ì„±ì : ê¹€ì¤€í™˜
+ì‘ì„±ëª©ì  : ì¡°ê±´ë¬¸
+ì‘ì„±ì¼ì§€ : 23/07/2020
+ì‘ì„±í™˜ê²½ : Windows 10, OpenJDK-14.0.2, EditPlus 5.3
 */
 
 import java.util.Scanner;
@@ -11,32 +11,42 @@ public class IfDemo {
 	public static void main(String[] args) { 
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Á¡¼ö : ");
+		System.out.print("ì ìˆ˜ : ");
 		int score = scan.nextInt();
 		// 1.
-/*		if (score >= 60) System.out.println("ÇÊ±â ÇÕ°İÀÔ´Ï´Ù.");
-		if(score<60) System.out.println("¾Æ½±½À´Ï´Ù. ´ÙÀ½ ±âÈ¸¿¡...");
+/*		if (score >= 60) System.out.println("í•„ê¸° í•©ê²©ì…ë‹ˆë‹¤.");
+		if(score<60) System.out.println("ì•„ì‰½ìŠµë‹ˆë‹¤. ë‹¤ìŒ ê¸°íšŒì—...");
 		// 2.
 		if (score >= 60){
-			System.out.println("ÃàÇÏÇÕ´Ï´Ù.");
-			System.out.println("ÇÊ±â ÇÕ°İÀÔ´Ï´Ù.");
+			System.out.println("ì¶•í•˜í•©ë‹ˆë‹¤.");
+			System.out.println("í•„ê¸° í•©ê²©ì…ë‹ˆë‹¤.");
 		} else{	// score < 60
-			System.out.println("¾Æ½±½À´Ï´Ù. ");
-			System.out.println("´ÙÀ½ ±âÈ¸¿¡ ´Ù½Ã ÀÀ½ÃÇØÁÖ¼¼¿ä.");
+			System.out.println("ì•„ì‰½ìŠµë‹ˆë‹¤. ");
+			System.out.println("ë‹¤ìŒ ê¸°íšŒì— ë‹¤ì‹œ ì‘ì‹œí•´ì£¼ì„¸ìš”.");
 		}
 */		// 3.
-		if (score >= 90){
-			System.out.println("ÃàÇÏÇÕ´Ï´Ù. Excellent!");
-			System.out.println("ÇÊ±â ÇÕ°İÀÔ´Ï´Ù.");
+/*		if (score >= 90){
+			System.out.println("ì¶•í•˜í•©ë‹ˆë‹¤. Excellent!");
+			System.out.println("í•„ê¸° í•©ê²©ì…ë‹ˆë‹¤.");
 		} else if(score >= 60){	// 60 <= score < 90	
-			System.out.println("ÃàÇÏÇÕ´Ï´Ù. Good~");
-			System.out.println("ÇÊ±â ÇÕ°İÀÔ´Ï´Ù.");
+			System.out.println("ì¶•í•˜í•©ë‹ˆë‹¤. Good~");
+			System.out.println("í•„ê¸° í•©ê²©ì…ë‹ˆë‹¤.");
 		} else if(score >= 50){	// 50 <= score < 60	
-			System.out.println("³Ê¹« ¾Æ½±½À´Ï´Ù. ");
-			System.out.println("´ÙÀ½ ±âÈ¸¿¡ ´Ù½Ã ÀÀ½ÃÇØÁÖ¼¼¿ä.");
+			System.out.println("ë„ˆë¬´ ì•„ì‰½ìŠµë‹ˆë‹¤. ");
+			System.out.println("ë‹¤ìŒ ê¸°íšŒì— ë‹¤ì‹œ ì‘ì‹œí•´ì£¼ì„¸ìš”.");
 		} else{
-			System.out.println("ºÒÇÕ°İÀÔ´Ï´Ù");
-			System.out.println("³ë´äÀÌ³×¿ä");
+			System.out.println("ë¶ˆí•©ê²©ì…ë‹ˆë‹¤");
+			System.out.println("ë…¸ë‹µì´ë„¤ìš”");
+*/		// 4.
+		if(score >= 60){	
+			System.out.println("í•„ê¸° í•©ê²©ì…ë‹ˆë‹¤.");
+			if (score >= 90){
+			System.out.println("ì¶•í•˜í•©ë‹ˆë‹¤. Excellent!");
+			} else System.out.println("ì¶•í•˜í•©ë‹ˆë‹¤. Good~");
+		} else {
+			System.out.println("ë¶ˆí•©ê²©ì…ë‹ˆë‹¤");
+			if (score >= 50)System.out.println("ë„ˆë¬´ ì•„ì‰½ìŠµë‹ˆë‹¤. ");
+			else System.out.println("ë…¸ë‹µì´ë„¤ìš”");
 		}
 	}
 }
