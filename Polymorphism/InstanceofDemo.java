@@ -3,16 +3,18 @@
 public class InstanceofDemo {
 
 	public static void main(String[] args) {
-		Mammal m = new Mammal();//ºÎ¸ðÇü
-		Korean ko = new Korean();//ÀÚ½ÄÇü
-		// ÇÑ±¹ÀÎÀº Æ÷À¯·ùÀÌ´Ù. -> Korean is a Mammal.
-		// m=ko; // ÀÚ½ÄÀÌ ºÎ¸ðÇüÀ¸·Î º¯È¯ÇÏ´Â °ÍÀº ¹«Á¶°Ç ¼º°øÇÑ´Ù.
-		// Æ÷À¯·ù´Â ÇÑ±¹ÀÎÀÌ´Ù???? X
-		// ko = (Korean)m; //ÀÚµ¿Çüº¯È¯¿¡·¯, °­Á¦Çüº¯È¯ ÄÄÆÄÀÏ ¿¡·¯
+		Mammal m = new Mammal();//ë¶€ëª¨í˜•
+		Korean ko = new Korean();//ìžì‹í˜•
+		// í•œêµ­ì¸ì€ í¬ìœ ë¥˜ì´ë‹¤. -> Korean is a Mammal.
+		// m=ko; // ìžì‹ì´ ë¶€ëª¨í˜•ìœ¼ë¡œ ë³€í™˜í•˜ëŠ” ê²ƒì€ ë¬´ì¡°ê±´ ì„±ê³µí•œë‹¤.
+		// í¬ìœ ë¥˜ëŠ” í•œêµ­ì¸ì´ë‹¤???? X
+		// ko = (Korean)m; //ìžë™í˜•ë³€í™˜ì—ëŸ¬, ê°•ì œí˜•ë³€í™˜ ì»´íŒŒì¼ ì—ëŸ¬
 		Object obj = new Object();
 		String str = new String();
-		obj = str; // ¸¸¾à Àü¿¡ Çüº¯È¯ÀÌ ÇÑ¹øµÇ¾ú¾ú´Ù¸é ¹Ø¿¡ ¶óÀÎ ¿¡·¯¾øÀÌ ½ÇÇà°¡´É
-		str = (String)obj;
+		//obj = str; // ë§Œì•½ ì „ì— í˜•ë³€í™˜ì´ í•œë²ˆë˜ì—ˆì—ˆë‹¤ë©´ ë°‘ì— ë¼ì¸ ì—ëŸ¬ì—†ì´ ì‹¤í–‰ê°€ëŠ¥
+		//str = (String)obj;
+		if(obj instanceof String) System.out.println("í˜•ë³€í™˜ ê°€ëŠ¥");
+		else System.out.println("í˜•ë³€í™˜ ë¶ˆê°€ëŠ¥");
 	}
 
 }
