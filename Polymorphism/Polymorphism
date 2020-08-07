@@ -9,7 +9,10 @@ public class CarCenter {
 		cc.repair(matiz);
 	}
 	
-	void repair(Car car){ // 다형성, 폴리모피즘을 파라미터로 이용했다, 자동형변환
+	void repair(Car car){ // 다형성, 폴리모피즘을 파라미터로 이용했다, 자동형변환, Polymorphic Parameter
+		if(car instanceof Matiz)System.out.println("마티즈 수리 완료"); // 어떤 객체인지 구분하기
+		else if(car instanceof Carnival)System.out.println("카니발 수리 완료");
+		else if(car instanceof Sonata)System.out.println("소나타 수리 완료");
 		System.out.println(car + "이(가) 잘 수리됐습니다.");
 	}
 	
