@@ -1,3 +1,7 @@
+// instanceof의 용법
+// 1. 부모형의 참조변수로 자식 클래스(원형)을 알고자 할때
+// 2. 부모형이 자식형으로 강제형변환 여부를 판단하고자할 때
+
 public class CarCenter {
 	public static void main(String[] args) {
 		CarCenter cc = new CarCenter();
