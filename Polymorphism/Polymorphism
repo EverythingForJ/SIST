@@ -1,0 +1,56 @@
+public class CarCenter {
+	public static void main(String[] args) {
+		CarCenter cc = new CarCenter();
+		Sonata sonata = new Sonata("Silver Sonata");
+		cc.repair(sonata);
+		Carnival carnival = new Carnival("White Carnival");
+		cc.repair(carnival);
+		Matiz matiz = new Matiz("Red Matiz");
+		cc.repair(matiz);
+	}
+	
+	void repair(Car car){ // 다형성, 폴리모피즘을 파라미터로 이용했다, 자동형변환
+		System.out.println(car + "이(가) 잘 수리됐습니다.");
+	}
+	
+//	void repair(Sonata sonata){
+//		System.out.println(sonata + "이(가) 잘 수리됐습니다.");
+//	}
+//	
+//	void repair(Carnival carnival){ // overload
+//		System.out.println(carnival + "이(가) 잘 수리됐습니다.");
+//	}
+}
+
+
+class Matiz extends Car {
+	public Matiz(String name) {
+		super(name);
+	}
+}
+
+class Carnival extends Car {
+	public Carnival(String name) {
+		super(name);
+	}
+}
+
+class Sonata extends Car {
+	public Sonata(String name) {
+		super(name);
+	}
+}
+
+class Car {
+	private String name;
+
+	public Car(String name) {
+		super();
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return this.name;
+	}
+}
