@@ -1,37 +1,29 @@
+import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Hashtable;
+
+/*
+ * 1. java.util.Date class
+ * 2. java.util.Calendar class
+ * 3. java.util.Calendar & java.util.GregorianCalendar class
+ * 4. java.text.DateFormat & java.util.Date class
+ * 5. java.text.SimpleDateFormat & java.util.Date class
+ * 6. printf(String.format()) // java.util.Formatter class
+*/
 
 public class TodayDemo {
 	public static void main(String[] args) {
-		Date now = new Date();
-		// System.out.println(now); // now.toString()
-		// System.out.println(now.getYear()); // 1970년부터, 1900년부터
-		// System.out.println(now.getMonth()); // 0월부터 계산
-		String [] array = now.toString().split("\\s+"); // Wed Aug 12 17:12:06 KST 2020
-		System.out.println("오늘은 "+ array[5] + "년 " + getMonth(array[1]) + "월 " + array[2]+"일입니다.");
+		// 4.
+		// DateFormat df = DateFormat.getDateTimeInstance(DateFormat.FULL, DateFormat.FULL, Locale.KOREA);
+		// System.out.println(df.format(new Date()));
 		
+		// 5.
+//		String pattern = "지금은 GG yyyy년 MM월 dd일 aa hh시 mm분 ss초입니다.";
+//		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+//		System.out.println(sdf.format(new Date()));
+		
+		// 6.
+		// System.out.printf("Today is %1$tY년 %1$tm월 %1$td일.", new Date());
+		String now = String.format("Today is %1$tY년 %1$tm월 %1$td일.", new Date());
+		System.out.println(now);
 	}
-	
-	static int getMonth(String month) {
-		Hashtable ht = new Hashtable();
-		ht.put("Jan", 1);
-		ht.put("Feb", 2);
-		ht.put("Mar", 3);
-		ht.put("Apr", 4);
-		ht.put("May", 5);
-		ht.put("Jun", 6);
-		ht.put("Jul", 7);
-		ht.put("Aug", 8);
-		ht.put("Sep", 9);
-		ht.put("Oct", 10);
-		ht.put("Nov", 11);
-		ht.put("Dec", 12);
-		return (Integer)ht.get(month);		
-	}
-	
-	
-	
-	
-	
-	
 }
