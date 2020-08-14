@@ -1,18 +1,16 @@
+import java.util.Scanner;
 import java.util.Vector;
 
-public class Output {
-
-	private Vector<Telephone> vector;
+class Output {
+	private Vector<Friend> vector;
 	
-	public Output(Vector<Telephone> vector) {
-		super();
+	Output(Vector<Friend> vector) {
 		this.vector = vector;
 	}
-
-	public void output() {
-		for(Telephone phone : vector) {
-			phone.print();
+	
+	void output() {
+		for(Friend f : this.vector) {
+			System.out.println(f);
 		}
 	}
-
 }
